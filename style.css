@@ -1,0 +1,784 @@
+        .h1 {
+            size: 36px;
+            color: black;
+            font-weight: bold;
+            font-size: 70px;
+            font-family: 'MyFont', Times, serif;
+            padding: 15px;
+            margin: 10px;
+            margin-left: 25%;
+            width: fit-content;
+            height: auto;
+        }
+
+        .h2 {
+            size: 36px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 'MyFont', Times, serif;
+            padding: 5px;
+            
+            width: fit-content;
+            height: auto;
+
+        }
+
+        .h3 {
+            color: transparent;
+            size: 36px;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'MyFont', Times, serif;
+            margin: auto;
+            width: fit-content;
+            height: auto;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            animation: blur-in 4s forwards;
+        }
+
+        @keyframes blur-in {
+            from {
+                color: transparent;
+                text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            to {
+                color: white;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+        }
+        
+        .border{
+            font-weight: none;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .h3 {
+            animation: blur-in 4s forwards;
+        }
+
+        .h4 {
+            text-align: left;
+            color: black;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'MyFont', Times, serif;
+            animation: blur-in2 4s forwards;
+        }
+
+        @keyframes blur-in2 {
+            from {
+                color: transparent;
+                text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            to {
+                color: Black;
+                text-shadow: none;
+            }
+        }
+
+        .h3 {
+            animation: blur-in 4s forwards;
+        }
+
+
+
+
+
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-family: 'MyFont';
+            overflow: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+
+        }
+
+        .icon-bar a {
+            float: left;
+            font-family: 'MyFont';
+            text-align: center;
+            width: 12.5%;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            font-size: 25px;
+        }
+
+        .icon-bar a:hover { 
+            background: white;
+            color: black;
+            text-decoration: underline;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family: 'MyFont';
+            border-radius: 10px;
+            width: 50%;
+
+        }
+
+        .box:hover {
+            border: 10px solid black;
+            transition: all 0.4s ease;
+        }
+
+
+        .wallpaper {
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'MyFont', Times, serif;
+            background-image: url("Images/Wallpapers/Nintendo\ Wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .wallpaperB {
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'MyFont', Times, serif;
+            background-image: url("Images/Wallpapers/the-nintendo-switch.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top -60px;
+        }
+
+        .wallpaperD {
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'MyFont', Times, serif;
+            background-image: url("Images/Wallpapers/technology.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .wallpaperE {
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'MyFont', Times, serif;
+            background-image: url("Images/Wallpapers/Games.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 900px;
+        }
+
+
+        .wallpaperF {
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'MyFont', Times, serif;
+            background-image: url("Images/Wallpapers/History.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 850px;
+        }
+
+        .button,
+        .button2,
+        .button3 {
+            color: black;
+            font-size: 30px;
+            font-family: 'MyFont', Times, serif;
+            background-color: rgba(211, 211, 211, 0.5);
+            /* Light grey with 50% opacity */
+            margin: auto;
+            width: fit-content;
+            height: auto;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            left: -200%;
+        }
+
+        .button {
+            animation: slide-in 2s forwards;
+        }
+
+        .button2 {
+            animation: slide-in2 2s forwards;
+        }
+
+        .button3 {
+            animation: slide-in3 2s forwards;
+        }
+
+        .button:hover {
+            background-color: lightgrey;
+        }
+
+        @keyframes slide-in {
+            to {
+                left: 20px;
+            }
+        }
+
+        @keyframes slide-in2 {
+            to {
+                left: 0px;
+            }
+        }
+
+        @keyframes slide-in3 {
+            to {
+                left: 1240px;
+            }
+        }
+
+
+
+        .lText {
+            color: black;
+            background-color: white;
+            font-size: 50px;
+            font-family: 'MyFont', Times, serif;
+            font-weight: bold;
+        }
+
+        .mText {
+            color: black;
+            font-size: 30px;
+            font-family: 'MyFont', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .infoText {
+            color: black;
+            font-family: 'Poppins', Times, serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        @font-face {
+            font-family: 'MyFont';
+            src: url('nevis.ttf');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            src: url('Poppins/Poppins-Light.ttf');
+        }
+
+        .boxBlur {
+            display: flex;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: white;
+            border-radius: 10px;
+            width: 30%;
+            border: 1px solid #ccc;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 30px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .boxBlur2 {
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: white;
+            border-radius: 10px;
+            width: 40%;
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+            /* display:inline-block;
+            position:relative; */
+        }
+
+        .boxBlur2:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .boxBlur:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .boxBlurBlack {
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: fit-content;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family: 'MyFont';
+            border-radius: 10px;
+            width: 40%;
+            font-size: larger;
+            margin-bottom: 30px;
+        }
+
+        .boxBlurBlack2 {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family: 'MyFont';
+            border-radius: 10px;
+            width: 40%;
+            font-size: larger;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url("Images/Wallpapers/Nintendo Wallpaper.jpg");
+
+            /* Set a specific height */
+            min-height: 900px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4,
+        .bgimg-5,
+        .bgimg-6,
+        .bgimg-7 {
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-color: black;
+            background-image: url("Images/nintendo-lite.avif");
+            min-height: 900px;
+            background-position: center top 30px;
+        }
+
+        .bgimg-2 {
+            background-image: url("Images/Games/Game and Watch.jpg");
+            min-height: 750px;
+        }
+
+        .bgimg-3 {
+            background-image: url("Images/Games/Game\ Boy.webp");
+            min-height: 750px;
+        }
+
+        .bgimg-4 {
+            background-image: url("Images/Games/Pokemon\ Mini.webp");
+            min-height: 750px;
+        }
+
+        .bgimg-5 {
+
+            background-image: url("Images/Games/Nintendo\ DS.jpg");
+            min-height: 750px;
+        }
+
+        .bgimg-6 {
+            background-image: url("Images/Games/Nintendo\ 3D3.png");
+            min-height: 750px;
+        }
+
+        .bgimg-7 {
+            background-image: url("Images/Wallpapers/Nintendo\ Switch.png");
+            min-height: 750px;
+        }
+
+        .text-box {
+            float: right;
+            width: 40%;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-box h2 {
+            font-size: 43px;
+            margin: 0 auto;
+            border-bottom: 2px solid black;
+            text-align: center;
+            width: 50%;
+        }
+
+        .text-box p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .image {
+            
+            width: 60%;
+            margin-top: 50px;
+            margin-right: 20px;
+            /* add some space between the image and text */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.01);
+        }
+
+        .text,
+        .textW {
+            overflow: hidden;
+            margin: 10px;
+
+            /* Fonts */
+            font-size: 20px;
+            font-family: 'poppins', sans-serif;
+
+        }
+
+        .text {
+            color: black;
+        }
+
+        .textW {
+            color: black;
+        }
+
+
+        .container,
+        .containerB,
+        .container2 {
+            width: fit-content;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+
+            /* clip the image to the container */
+            margin-bottom: 20px;
+            animation: fade-in 1.5s ease-in-out forwards;
+            background: white;
+            width: 100%;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .containerB {
+            background-color: white
+        }
+
+        .image2 {
+            float: left;
+            width: 70%;
+            margin-right: 20px;
+            /* add some space between the image and text */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.01);
+        }
+
+        .text2,
+        .textW {
+            overflow: hidden;
+            margin: 10px;
+            margin-left: none;
+
+            /* Fonts */
+            font-size: 20px;
+            font-family: 'poppins', sans-serif;
+
+        }
+
+        .containerV {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            /* clip the image to the container */
+            margin-bottom: 20px;
+            animation: fade-in2 3s ease-in-out forwards;
+        }
+
+        .imageV {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        .imageV:hover {
+            transform: scale(1.01);
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .news-section {
+            padding: 300px;
+            padding-top: 150px;
+            padding-bottom: 10px;
+            background: #eae2b7
+        }
+
+        .news-section h1 {
+            color: black;
+            font-family: "MyFont", sans-serif;
+            font-size: xx-large;
+        }
+
+
+        .news-section h2 {
+            color: black;
+            font-family: "poppins", sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        
+
+        .side-by-side {
+            display: flex;
+            justify-content: center;
+        }
+
+        .containerV2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            /* clip the image to the container */
+            margin-bottom: 20px;
+            animation: fade-in3 3s ease-in-out forwards;
+        }
+
+        @keyframes fade-in3 {
+            from {
+                opacity: 0;
+                display: none;
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
+
+
+        /* Consoles */
+        .consoles-section {
+            padding: 20px 200px 0 200px;
+            
+        }
+
+        .consoles-section h1 {
+            color: black;
+            font-family: "MyFont", sans-serif;
+            font-size: xx-large;
+        }
+
+        .consoles-section h3 {
+            color: black;
+            font-family: "MyFont", sans-serif;
+            font-size: xx-large;
+        }
+
+    /* Timeline */
+        .timeline{
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .timeline::after{
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background: #fff;
+            top:0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+        }
+
+        .timeline img{
+            max-height: 300px;
+            max-width: 400px;
+        }
+
+        .timelineBox{
+            padding: 10px 50px;
+            position:relative;
+            width: 50%;
+        }
+
+        .text__box{
+            padding: 20px 30px;
+            background: #fff;
+            position: relative;
+            border-radius: 6px;
+            font-size: 16px;
+            animation: movedown 1s linear forwards;
+
+            width: 500px;
+        }
+
+
+        .text__box h2{
+            font-family: "MyFont";
+            font-weight: 600;
+        }
+        .text__box small{
+            font-family: "MyFont";
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .text__box p{
+            font-size: 17px;
+            font-family: 'Sans Serif'
+        }
+
+        .left-container{
+            left:0;
+        }
+
+        .right-container{
+            left: 50%
+        }
+
+        .dot,
+        .dot2,
+        .dot-right {
+            height: 40px;
+            width: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+
+            position:absolute;
+            right: -20px;
+            top: 32px;
+            z-index: 10;
+          }
+
+        .dot2{
+            top: 26px;
+        }
+
+        .dot-right{
+           left: -20px;
+        }
+
+        .left-container-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid white;
+            right: -15px;
+        }
+
+        .left-container-arrow2{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid white;
+            right: 35px;
+        }
+
+        .right-container-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid white;
+            left: -15px;
+        }
+
+        .video-text{
+            float: left;
+            margin: 10px;
+            text-align: center;
+            width: 550px;
+        }
+
+        .video-text p{
+            text-align: left;
+        }
+
+        /* Technology */
+
+        .tec-section {
+            padding: 10px 200px 10px 200px;
+            justify-content: center;
+        }
+
+        .tec-section img{
+            
+            width: 40%;
+        }

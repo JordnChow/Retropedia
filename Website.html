@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--Laptop average width = 1280px -->
+
+<head>
+    <link rel="icon" type="image/x-icon" href="Images\favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        RETROPEDIA
+    </title>
+    <style>
+        h2 {
+            border-bottom: 4px solid black;
+            width: 100%;
+            font-size: 36px;
+            font-family: 'MyFont';
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="my-audio" loop>
+        <source src="Music\Mario themesong.mp4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!--First thing viewer/s see-->
+    <section class="parallax">
+        <section class="icon-bar">
+            <a class="border" href="Website.html">
+                <!-- <img src="Images\Logo.png" height="100" width="190"> -->
+                Mainpage
+            </a>
+            <a class="border" href="Handheld.html">
+                <!-- <img src="Images/Nintendo_Lite.png" height="100px" width="210px"> -->
+                Handhelds
+            </a>
+            <a class="border" href="Consoles.html">
+                <!-- <img src="Images/Nintendo_Switch.png" height="100px" width="200px"> -->
+                Consoles
+            </a>
+            <a class="border" href="History.html">
+                <!-- <img src="Images/Nintendo News.png" height="100px" width="160px"> -->
+                History
+            </a>
+            <a class="border" href="Technology.html">
+                <!-- <img src="Images/Old logo.png" height="100px" width="100px"> -->
+                Technology
+            </a>
+            <a class="border" href="Games.html">
+                <!-- <img src="Images/Old Mario.png" height="100px" width="100px"> -->
+                Games
+            </a>
+            <a class="border" href="bibliography.html">
+                <!-- <img src="Images/Old Mario.png" height="100px" width="100px"> -->
+                Bibliography
+            </a>
+            <a class="border" href="Newsfeed.html">
+                <!-- <img src="Images/Old Mario.png" height="100px" width="100px"> -->
+                Newsfeed
+            </a>
+        </section>
+        <br><br><br>
+
+        <section class="h3" style="position:absolute; left: 20px">
+            <br><br>
+            Nintendo Unleashed:
+            <br>
+            The Ultimate Guide for
+            <br>
+            Gamers and Enthusiasts
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a id="play-button" onclick="playAudio()" class="button" style="position:absolute;">
+            Play Some Music
+        </a>
+        <br><br><br><br><br><br><br><br>
+        <a class="button" href="#section1">
+            Find Out About What We Do
+        </a>
+
+        <br><br><br><br><br><br>
+    </section>
+    <center>
+        <section id="section1" class="lText">
+            The Ultimate Guides
+        </section>
+    </center>
+    <br>
+
+    <a class="boxBlur" style="position:relative; left: 30px" href="History.html">
+        <p class="mText">
+            History
+        </p>
+        <p class="infoText">
+            Discover more about the iconic family gaming and how they became one of the most successful gaming companies
+            after improving from creating mere playing cards.
+        </p>
+    </a>
+
+    <a class="boxBlur" style="position:relative; left: 60px" href="Handheld.html">
+        <p class="mText">
+            Handheld Consoles
+        </p>
+        <p class="infoText">
+
+            Indulge yourself into the handheld gaming experience with the orginal Game and watch to the Nintendo switch,
+            and discover their unique evolution over the years.
+
+        </p>
+    </a>
+
+    <a class="boxBlur" style="position:relative; left: 90px" href="Consoles.html">
+        <p class="mText">
+            Nintendo Consoles
+        </p>
+        <p class="infoText">
+            Take a dive into the original consoles of Nintendo - from the  Nintendo Entertainment System to the
+             Nintendo Switch, guaranteed to bring back memories.
+        </p>
+    </a>
+
+    <a class="boxBlur" style="position:relative; left: 30px" href="NewsFeed.html">
+        <p class="mText">
+            Nintendo NewsFeed
+        </p>
+        <p class="infoText">
+
+            Catch up on all the latest releases, updates and accessories here, you don’t want to miss out on the newest
+            games being released!
+        </p>
+    </a>
+
+    <a class="boxBlur" style="position:relative; left: 60px" href="Technology.html">
+        <p class="mText">
+            Technology
+        </p>
+        <p class="infoText">
+            Engross yourself into the unique evolution and improvement of nintendo’s technology over time, progressing
+            into what we know.
+        </p>
+    </a>
+
+    <a class="boxBlur" style="position:relative; left: 90px" href="Games.html">
+        <p class="mText">
+            Games
+        </p>
+        <p class="infoText">
+
+            Take a look at some of the worlds biggest games, and how these games arose from humble beginnings
+            to extraordinary success
+        </p>                    
+    </a>
+    <hr>
+    <video width="50%"controls>
+        <source src="Music\What is Nintendo_.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video width="50%" controls >
+        <source src="Music\nintendo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+        var audio = document.getElementById("my-audio");
+        var playButton = document.getElementById("play-button");
+
+        function playAudio() {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = "Pause The Music";
+            } else {
+                audio.pause();
+                playButton.textContent = "Play Some Music";
+            }
+        }
+
+    </script>
+</body>
