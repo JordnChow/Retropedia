@@ -19,14 +19,10 @@
 </head>
 
 <body>
-    <audio id="my-audio" loop>
-        <source src="Music\Mario themesong.mp4" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
     <!--First thing viewer/s see-->
     <section class="parallax">
         <section class="icon-bar">
-            <a class="border" href="Website.html">
+            <a class="border" href="index.html">
                 <!-- <img src="Images\Logo.png" height="100" width="190"> -->
                 Mainpage
             </a>
@@ -69,10 +65,7 @@
             <br>
             Gamers and Enthusiasts
         </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <a id="play-button" onclick="playAudio()" class="button" style="position:absolute;">
-            Play Some Music
-        </a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br>
         <a class="button" href="#section1">
             Find Out About What We Do
@@ -151,27 +144,4 @@
         </p>                    
     </a>
     <hr>
-    <video width="50%"controls>
-        <source src="Music\What is Nintendo_.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <video width="50%" controls >
-        <source src="Music\nintendo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <script>
-        var audio = document.getElementById("my-audio");
-        var playButton = document.getElementById("play-button");
-
-        function playAudio() {
-            if (audio.paused) {
-                audio.play();
-                playButton.textContent = "Pause The Music";
-            } else {
-                audio.pause();
-                playButton.textContent = "Play Some Music";
-            }
-        }
-
-    </script>
 </body>
